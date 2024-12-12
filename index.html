@@ -61,6 +61,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
+    <script>
+        document.addEventListener("contextmenu", (e) => e.preventDefault());
+        document.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) e.preventDefault();
+        });
+    </script>
 </head>
 <body>
 <h1>It's My Birthday!</h1>
